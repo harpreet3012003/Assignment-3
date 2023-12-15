@@ -1,0 +1,20 @@
+.navbar ul li a {
+  color: yellow;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+button {
+  background-color: red;
+}
+
+form {
+  border: dashed;
+}
+
+#button1::after {
+  content: Next;
+  text-transform: uppercase;
+}/*# sourceMappingURL=usingsass.css.map */

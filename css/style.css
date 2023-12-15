@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+	line-height: 1.6;
+    background-image: url('../img/pexels-photo-311039.jpeg');
+}
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    margin-right: 15px;
+}
+.navbar ul li a:hover{
+    font-weight: bolder;
+}
+img{
+    border-radius: 25px;
+}
+video{
+    border-radius: 25px;
+    
+}
+main{
+	padding: 10px;
+}
+
+footer {
+    background-color:black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+h1{
+    width:90%;
+    border:1px solid gainsboro;
+    padding:10px;
+    margin:30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px burlywood;
+    text-shadow: 10px 10px 5px rgb(158,95,13);
+    font-size: 40px;
+    transition: width 2s;
+    
+}
+h1{
+    animation-name: OceanSunfish;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+button{
+   
+    width:90px;
+    padding: 5px;
+    border-radius: 20px;
+}
+button a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+@keyframes OceanSunfish {
+    0% {background:aqua;}
+    25% {background:brown;}
+    50% {background:cornflowerblue;}
+    100% {background:crimson;}
+}

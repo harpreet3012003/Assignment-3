@@ -1,0 +1,22 @@
+$menucolor:yellow;
+$menuhover: white;
+$btncolor: red;
+$formborder:dashed;
+$button1after:uppercase;
+.navbar ul li a{
+    color:$menucolor;
+}
+.navbar ul li a:hover{
+    color:$menuhover;
+}
+button{
+    background-color: $btncolor;
+}
+form{
+    border: dashed;
+}
+button::after{
+    content:Next;
+    text-transform: $button1after;
+}
+

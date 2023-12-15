@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usingsass.css">
+</head>
+<body>
+ <div class="container">
+        
+        <form  action="https://formspree.io/f/xdorqdbq"
+        method="POST">
+      
+            <h1>Contact Us</h1>
+            <input type="text" id="firstname" placeholder="First Name" name="firstname"  required><br><br>
+            <input type="text" id="lastname" placeholder="Last Name" name="lastname" required><br><br>
+            <input type="email" id="email"  placeholder="Email" name=email"  required><br><br>
+            <input type="date" id="date"  placeholdre="dd/mm/yy" name="date"  required><br><br>
+            <input type="text" id="phone"  placeholder="Phone" anme="phone"  required><br><br>
+            <textarea id="message" rows="4" cols="50" placeholder="Message" name="message"  required></textarea><br><br>
+            <button id="button2" type="submit" value="Send" onclick="validateForm">Submit Button</button><br><br> 
+            
+        </form>
+    </div>
+    <script>
+      function validateForm(){
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let email = document.getElementById("email").value;
+        let date = document.getElementById("date").value;
+        let phone = document.getElementById("phone").value;
+        let  message = document.getElementById("message").value;
+
+      function firstname(){
+    
+      if (firstname.length < 5)
+      { 
+        alert("First Name should be at least 5 characters");
+        return false;
+      }
+      return true;
+    }
+
+    function lastname(){
+    
+    if (lastname.length < 5)
+    { 
+      alert("Last Name should be at least 5 characters");
+      return false;
+    }
+    return true;
+  }
+      function email(){
+      if (!email.includes('@')) {
+        alert("Email should contain '@'");
+        return false;
+    }
+    return true;
+  }
+    
+  function date(){
+    if (!/^\d{1,2}\/\d{1,2}\/\d{2}$/.test(date)) {
+        alert("Date must have the format dd/mm/yy");
+        return false;
+    }
+    return true;
+
+  }
+
+  function phone(){
+    
+    if (!/^\d{10}$/.test(phone)) {
+        alert("Phone must contain 10 digits");
+        return false;
+    }
+    return true;
+  }
+
+    function message(){
+    if (message.length < 50) {
+        alert("Message must be at least 50 characters");
+        return false;
+    }
+    return true;
+  }
+}
+  
+
+
+
+
+    
+    
+    </script>
+  
+    
+</body>
+</html>
